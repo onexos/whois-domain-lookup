@@ -178,14 +178,13 @@ if ($_SERVER["QUERY_STRING"] ?? "") {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@72,600,50,1&display=swap" />
-  <?= CUSTOM_HEAD ?>
 </head>
 
 <body>
   <main>
     <header>
       <div>
-        <h1><a href="<?= BASE; ?>"><?= SITE_TITLE ?></a></h1>
+        <h1><a href="<?= BASE; ?>"><?= CUSTOM_HEAD ?></a></h1>
         <form action="" method="get" onsubmit="handleSubmit(event)">
           <div class="search-box">
             <input
@@ -503,7 +502,6 @@ if ($_SERVER["QUERY_STRING"] ?? "") {
     <footer>
       <?php if (HOSTED_ON): ?>
         <div>
-          Hosted on
           <?php if (HOSTED_ON_URL): ?>
             <a href="<?= HOSTED_ON_URL; ?>" rel="noopener" target="_blank"><?= HOSTED_ON; ?></a>
           <?php else: ?>

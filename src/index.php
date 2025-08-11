@@ -215,13 +215,12 @@ if ($_SERVER["QUERY_STRING"] ?? "") {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@72,600,50,1&display=swap">
-  <?= CUSTOM_HEAD ?>
 </head>
 
 <body>
   <header>
     <div>
-      <h1><a href="<?= BASE; ?>"><?= SITE_TITLE ?></a></h1>
+      <h1><a href="<?= BASE; ?>"><?= CUSTOM_HEAD ?></a></h1>
       <form action="" id="form" method="get">
         <div class="search-box">
           <input

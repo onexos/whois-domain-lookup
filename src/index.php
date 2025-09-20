@@ -222,9 +222,9 @@ if ($_SERVER["QUERY_STRING"] ?? "") {
     <div>
       <h1>
         <?php if ($domain): ?>
-          <a href="<?= BASE; ?>"><?= CUSTOM_HEAD ?></a>
+          <a href="<?= BASE; ?>"><?= SITE_TITLE ?></a>
         <?php else: ?>
-          <?= SITE_TITLE ?>
+          <?= CUSTOM_HEAD ?>
         <?php endif; ?>
       </h1>
       <form action="" id="form" method="get">

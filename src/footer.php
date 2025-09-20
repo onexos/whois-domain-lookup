@@ -7,7 +7,6 @@ require_once __DIR__ . "/../config/config.php";
 <footer>
   <?php if (HOSTED_ON): ?>
     <div>
-      Hosted on
       <?php if (HOSTED_ON_URL): ?>
         <a href="<?= HOSTED_ON_URL; ?>" rel="noopener" target="_blank"><?= HOSTED_ON; ?></a>
       <?php else: ?>

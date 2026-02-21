@@ -228,7 +228,7 @@ if ($_SERVER["QUERY_STRING"] ?? "") {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@72,600,50,1&display=swap">
-  
+  // <?= CUSTOM_HEAD ?>
 </head>
 
 <body>
